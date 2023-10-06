@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <body>
+        <div class="body-background"></div>
+        <div class="container"></div>
+            <div id="cont">
+                <div id="Contraseña">
+                    <!--FORMULARIO PARA LOGEAR-->
+                    <form action="bienvenido.html" id="logear" method="GET">
+                        <br>
+                        <br>
+                        <p>Ingresa tu nombre de usuario y la contraseña</p>
+                        <br>
+                        <input type="text" name="nombre" size="20" id="usuario" placeholder="Usuario" maxlength="10" />
+                        <br /><br />
+                        <input type="password" name="clave" size="20" id="contraseña" pattern="6" placeholder="Contraseña" maxlength="10" required/>
+                        <div id="error"></div>
+                        <br /><br />
+                        <br>
+                        <!--BOTONES DE BORRAR Y ENVIAR FORMULARIO A PAGINA DE BIENVENIDA-->
+                        <button type="submit" value = "iniciar" onclick="Iniciar()" id="iniciar">Iniciar</button> &nbsp; &nbsp; &nbsp;
+                        <button type="button" value="Eliminar" onclick="limpiar()" id="eliminar">Borrar</button>
+                        <a href="../html/principal.html"><input type="button" id="regresar" value="Volver a pagina principal" ></a>
+                        <br><br>
+                    </form>
+                </div>
+                <script src="../javascript/login.js"></script>
+            </div>
+            
+        </div>
+    </body>
+    
+
+</body>
+</html>

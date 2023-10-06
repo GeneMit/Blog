@@ -1,0 +1,70 @@
+body{
+    background: url(../Img.img/4ec47d6694ea11c715ba5a524aa239ae.jpg);
+    background-size: cover;}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1; 
+    }}
+
+.fade-in-text {
+    animation: fadeIn 3s ease-in;
+    font-size: 70px;
+    text-align: center;}
+
+p {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    animation-duration: 3s;
+    animation-name: slidein;}
+
+#registro1{
+    margin-left: 45.8%;
+    font-family: cursive;
+    font-size: 15px;
+    border-color: rgba(255, 255, 255, 0);
+    transition: background-color 3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.boton1:hover{background-color: #ff89f9;}
+@keyframes miAnimacion {
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.boton1.animado {
+    animation: miAnimacion 0.5s ease;}
+    
+
+
+#registro{
+    font-family: cursive;
+    align-items: center;
+    font-size: 15px;
+    border-color: rgba(255, 255, 255, 0);
+    transition: background-color 3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+.boton:hover{ background-color: #ff89f9;}
+@keyframes miAnimacion {
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.boton.animado {
+    animation: miAnimacion 0.5s ease;}
+

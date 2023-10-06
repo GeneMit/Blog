@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bienvenido.css">
+</head>
+<body>
+    <div id="bienve">
+    <!--BIENVENIDA AL USUARIO-->
+    <h1 id="bienvenida"></h1>
+    <h2>Personalicemos tu blog</h2>
+    <br>
+    &nbsp;
+    
+    <!-- PERSONALIZACIÓN DEL ARTICULO DEL USUARIO -->
+    <form action="blog4.html" id="ArticuloForm" method="GET">
+        <p>¿Sobre qué deseas crear tu artículo?:</p>
+        <input type="text" id="artic" maxlength="15">
+        <br><br>
+        <p>Escribe el nombre que llevará tu artículo:</p>
+        <input type="text" id="nomb" maxlength="15">
+        <br>
+        <p>Escribe un resumen de tu artículo:</p>
+        <textarea id="resum" rows="10" cols="50" maxlength="400"></textarea>
+        <br>
+        <p>Escribe el nombre del autor de este artículo</p>
+        <input type="text" id="aut" maxlength="15">
+        <br><br>
+    </form>    
+    
+        <!-- BOTÓN PARA POSTEAR EL ARTICULO Y DE REGRESO A LA PÁGINA DE INICIO -->
+        <input type="reset" value="Borrar" id="borrar" onclick="borrarForm()"><input type="button" value=" Crear y Postear" id="post" onclick="CrearArticulo()"> &nbsp;   <a href="../html/principal1.html"><input type="button" id="volver" value="Volver a página de inicio"></a>
+        <br>
+    </div>
+    <script src="../javascript/bienvenido.js"></script>
+</body>
+</html>

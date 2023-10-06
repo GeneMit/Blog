@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/blog.css">
+</head>
+<body>
+    <h1 class="titulo" >EXPRESATE</h1>
+    <br>
+    <div id="artic"></div>
+    <script>
+    var Articulo = localStorage.getItem("articulo");
+    document.getElementById("artic").innerHTML = Articulo;
+    </script>
+    <br><br>
+    <!--BOTON DE ME GUSTA-->
+    <p><span id="contadorLikes">0</span> 👍🏼</p>
+    <input type="button" onclick="darLike()" id="megusta" class="pop"  value="Me gusta">
+    <br><br>
+    <br><br>
+    <hr>
+    <a href="../html/principal.html" ><input type="button" id="inicio" value="Inicio"></a> <a href="../html/bienvenido copy.html" ><input type="button" id="nuevo" value="Volver a crear"></a>
+    <input id="Delete" onclick="eliminar()" type="reset" value="Eliminar">
+    
+    <script>
+        var contador = 0;
+    var meGustaActivo = false;
+    function darLike() {
+        if (meGustaActivo) {
+            contador--;
+            document.getElementById("contadorLikes").textContent = contador;
+            meGustaActivo = false;
+        } else
+        {
+            contador++;
+            document.getElementById("contadorLikes").textContent = contador;
+            meGustaActivo = true;}
+        
+    }
+    function eliminar()
+    {document.getElementById("artic").remove() ;
+    document.getElementById("contadorLikes").remove();
+    document.getElementById("megusta").remove();
+
+}
+    </script>
+    <script src="../javascript/bienvenido.js" ></script>
+</body>
+</html>

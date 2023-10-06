@@ -1,0 +1,122 @@
+body{background: url(../Img.img/acuarela-tonos-azul_1048-12706.avif);
+    background-size: 700px;
+    background-position: center top;
+    background-repeat: no-repeat;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-left: 5%;
+    position: relative;
+    top: -30px;
+    font-size: 23px;
+    
+}
+
+#usuario {
+    margin-left: 36%;
+    position: relative;
+    top: -3px;
+    width: 154px;
+    height: 25px;
+    size: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#contraseña {
+    margin-left: 36%;
+    position: relative;
+    top: -1px;
+    height: 25px;
+    width: 154px;
+    size: 3cm;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#iniciar {
+    margin-left: 38%;
+    position: relative;
+    top: -16px;
+    border-radius: 10px;
+    transition: background-color 1s ease;
+    border-color:rgba(54, 54, 255, 0);
+    background-color: rgba(54, 54, 255, 0.055);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#iniciar:hover{ background-color: #823fff;}
+@keyframes miAnimacion {
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#iniciar.animado {
+    animation: miAnimacion 0.9s ease;}
+
+#eliminar {
+    margin-left: 57%;
+    position: relative;
+    border-radius: 10px;
+    border-color:rgba(54, 54, 255, 0);
+    background-color: rgba(54, 54, 255, 0.055);
+    opacity:initial;
+    transition: background-color 1s ease;
+    top: -38px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+#eliminar:hover{ background-color: #823fff;}
+@keyframes miAnimacion {
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#eliminar.animado {
+    animation: miAnimacion 0.9s ease;}
+
+
+#regresar{
+    margin-left: 35%;
+    position: relative;
+    top: -10px;
+    border-radius: 17px;
+    border-color:rgba(54, 54, 255, 0.055);
+    background-color: rgb(64, 153, 255);
+    height: 40px;
+    transition: background-color 1s ease;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#regresar:hover{ background-color: #823fff;}
+@keyframes miAnimacion {
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#regresar.animado {
+    animation: miAnimacion 0.01s ease;}
+
+
+
+
+
+#cont{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 450px;
+    margin-right: 450px;
+    margin-top: 100px;
+    opacity:unset;}
+
